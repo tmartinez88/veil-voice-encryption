@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 2,
+			"revision" : 4,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 77.0, 79.0, 995.0, 710.0 ],
+		"rect" : [ 386.0, 79.0, 995.0, 710.0 ],
 		"bgcolor" : [ 0.852829, 0.741371, 0.780634, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -113,7 +113,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 628.0, 139.0, 131.541214, 173.030914 ],
+					"patching_rect" : [ 628.0, 139.0, 173.030914, 227.606979 ],
 					"pic" : "/Users/thomasjohnmartinez/Creative Cloud Files/Artboard 4.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 503.0, 80.100357, 135.242508, 177.899643 ]
@@ -176,16 +176,16 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-56",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.0, 244.0, 160.0, 52.0 ],
+					"patching_rect" : [ 149.0, 244.0, 160.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 168.0, 274.0, 23.0 ],
+					"presentation_rect" : [ 146.0, 168.0, 192.0, 23.0 ],
 					"style" : "",
-					"text" : "open MIKE_SECRET_MESSAGE2.wav wave"
+					"text" : "open secretmessage.wav wave"
 				}
 
 			}
@@ -436,7 +436,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 318.0, 244.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.75, 264.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 119.75, 233.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -650,8 +650,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 2,
+							"revision" : 4,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1108,7 +1108,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 698.0, 179.0, 106.408096, 113.22683 ],
+					"patching_rect" : [ 698.0, 179.0, 113.22683, 120.482513 ],
 					"pic" : "/Users/thomasjohnmartinez/Creative Cloud Files/generate_key.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 561.0, 158.0, 387.572083, 412.408081 ]
@@ -1504,11 +1504,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-31" : [ "live.button[3]", "live.button", 0 ],
-			"obj-9" : [ "multislider", "multislider", 0 ],
-			"obj-52" : [ "live.button[1]", "live.button", 0 ],
 			"obj-11" : [ "live.button[2]", "live.button", 0 ],
-			"obj-7" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-52" : [ "live.button[1]", "live.button", 0 ],
+			"obj-7" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-31" : [ "live.button[3]", "live.button", 0 ],
+			"obj-9" : [ "multislider", "multislider", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
