@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 51.0, 79.0, 1178.0, 727.0 ],
+		"rect" : [ 83.0, 79.0, 387.0, 648.0 ],
 		"bgcolor" : [ 0.852829, 0.741371, 0.780634, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,49 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Times New Roman",
+					"fontsize" : 20.0,
+					"id" : "obj-64",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 245.75, 20.650536, 129.0, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 230.0, 5.650536, 97.0, 29.0 ],
+					"style" : "",
+					"text" : "Encrypt",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-67",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 350.0, 1064.0, 227.5, 33.0 ],
+					"style" : "",
+					"text" : "to see if you have the latest version of the software"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-71",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -77.0, 360.0, 72.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-66",
 					"linecount" : 2,
@@ -83,7 +126,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -52.122192, 1332.533447, 315.06665, 22.0 ],
+					"patching_rect" : [ 243.944458, 1333.533447, 315.06665, 22.0 ],
 					"style" : "",
 					"text" : "there is a new version of veil available."
 				}
@@ -198,19 +241,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-67",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 309.0, 918.0, 50.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Times New Roman",
 					"id" : "obj-65",
 					"maxclass" : "comment",
@@ -233,7 +263,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 475.5, 932.0, 138.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 50.536896, 287.5, 138.0, 20.0 ],
+					"presentation_rect" : [ 43.536896, 287.5, 138.0, 20.0 ],
 					"style" : "",
 					"text" : "Record"
 				}
@@ -388,7 +418,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 476.0, 651.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 26.869354, 287.5, 20.0, 20.0 ],
+					"presentation_rect" : [ 19.869354, 287.5, 20.0, 20.0 ],
 					"rounded" : 20.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -730,7 +760,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 628.0, 139.0, 299.397003, 393.830475 ],
+					"patching_rect" : [ 411.766846, 157.275757, 208.448471, 274.195648 ],
 					"pic" : "/Users/thomasjohnmartinez/Creative Cloud Files/Artboard 4.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 1.75, 5.650536, 135.242508, 177.899643 ]
@@ -1670,10 +1700,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 698.0, 179.0, 128.20314, 136.418518 ],
+					"patching_rect" : [ 578.75, 206.268829, 154.462357, 164.360443 ],
 					"pic" : "/Users/thomasjohnmartinez/Creative Cloud Files/generate_key.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 4.619354, 242.0, 367.0, 390.5177 ]
+					"presentation_rect" : [ 12.869354, 242.0, 367.0, 390.5177 ]
 				}
 
 			}
@@ -1989,15 +2019,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 559.5, 869.5, 432.5, 869.5, 432.5, 592.5, 485.0, 592.5 ],
-					"source" : [ "obj-333", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-333", 0 ]
 				}
 
@@ -2347,6 +2368,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-71", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2365,13 +2395,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-31" : [ "live.button[3]", "live.button", 0 ],
-			"obj-11" : [ "live.button[2]", "live.button", 0 ],
-			"obj-7" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-50" : [ "live.toggle[4]", "live.toggle[1]", 0 ],
-			"obj-49" : [ "live.button[4]", "live.button", 0 ],
 			"obj-9" : [ "multislider", "multislider", 0 ],
-			"obj-52" : [ "live.button[1]", "live.button", 0 ]
+			"obj-7" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-11" : [ "live.button[2]", "live.button", 0 ],
+			"obj-49" : [ "live.button[4]", "live.button", 0 ],
+			"obj-31" : [ "live.button[3]", "live.button", 0 ],
+			"obj-52" : [ "live.button[1]", "live.button", 0 ],
+			"obj-50" : [ "live.toggle[4]", "live.toggle[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -2382,7 +2412,7 @@
 			}
 , 			{
 				"name" : "encrypt.maxpat",
-				"bootpath" : "~/Desktop/Projects/VEIL",
+				"bootpath" : "~/Desktop/Projects/VEIL/VEIL - Voice Encryption/veil-voice-encryption",
 				"type" : "JSON",
 				"implicit" : 1
 			}
