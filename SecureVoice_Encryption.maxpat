@@ -10,7 +10,7 @@
 		}
 ,
 		"rect" : [ 83.0, 79.0, 387.0, 648.0 ],
-		"bgcolor" : [ 0.852829, 0.741371, 0.780634, 1.0 ],
+		"bgcolor" : [ 0.987606, 0.860564, 0.905813, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 245.75, 20.650536, 129.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 230.0, 5.650536, 97.0, 29.0 ],
+					"presentation_rect" : [ 231.0, 5.650536, 97.0, 29.0 ],
 					"style" : "",
 					"text" : "Encrypt",
 					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
@@ -760,7 +760,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 411.766846, 157.275757, 208.448471, 274.195648 ],
+					"patching_rect" : [ 411.766846, 157.275757, 360.680298, 474.443268 ],
 					"pic" : "/Users/thomasjohnmartinez/Creative Cloud Files/Artboard 4.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 1.75, 5.650536, 135.242508, 177.899643 ]
@@ -1700,7 +1700,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 578.75, 206.268829, 154.462357, 164.360443 ],
+					"patching_rect" : [ 578.75, 206.268829, 174.892822, 186.100113 ],
 					"pic" : "/Users/thomasjohnmartinez/Creative Cloud Files/generate_key.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 12.869354, 242.0, 367.0, 390.5177 ]
@@ -2395,13 +2395,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-9" : [ "multislider", "multislider", 0 ],
-			"obj-7" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-11" : [ "live.button[2]", "live.button", 0 ],
-			"obj-49" : [ "live.button[4]", "live.button", 0 ],
 			"obj-31" : [ "live.button[3]", "live.button", 0 ],
+			"obj-9" : [ "multislider", "multislider", 0 ],
+			"obj-50" : [ "live.toggle[4]", "live.toggle[1]", 0 ],
+			"obj-49" : [ "live.button[4]", "live.button", 0 ],
 			"obj-52" : [ "live.button[1]", "live.button", 0 ],
-			"obj-50" : [ "live.toggle[4]", "live.toggle[1]", 0 ]
+			"obj-11" : [ "live.button[2]", "live.button", 0 ],
+			"obj-7" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

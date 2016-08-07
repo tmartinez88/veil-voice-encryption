@@ -9,8 +9,8 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 552.0, 79.0, 361.0, 565.0 ],
-		"bgcolor" : [ 0.405384, 0.862228, 0.976471, 1.0 ],
+		"rect" : [ 821.0, 115.0, 361.0, 565.0 ],
+		"bgcolor" : [ 0.702664, 0.822753, 0.972549, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -382,7 +382,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 704.75, 19.268829, 154.462357, 164.360443 ],
+					"patching_rect" : [ 704.75, 19.268829, 186.100113, 198.025589 ],
 					"pic" : "/Users/thomasjohnmartinez/Creative Cloud Files/generate_key.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 1.75, 189.0, 345.0, 367.107941 ]
@@ -433,7 +433,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 519.766846, 122.275757, 208.448456, 274.195648 ],
+					"patching_rect" : [ 519.766846, 122.275757, 474.443268, 624.08844 ],
 					"pic" : "/Users/thomasjohnmartinez/Creative Cloud Files/Artboard 4.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 1.75, 5.650536, 135.242508, 177.899643 ]
@@ -1162,9 +1162,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7" : [ "live.button[2]", "live.button", 0 ],
-			"obj-52" : [ "live.button[1]", "live.button", 0 ],
 			"obj-50" : [ "live.toggle[4]", "live.toggle[1]", 0 ],
+			"obj-52" : [ "live.button[1]", "live.button", 0 ],
+			"obj-7" : [ "live.button[2]", "live.button", 0 ],
 			"obj-45" : [ "live.gain~[1]", "live.gain~", 0 ]
 		}
 ,
