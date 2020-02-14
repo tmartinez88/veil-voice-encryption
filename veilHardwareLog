@@ -1,0 +1,47 @@
+The veilHardware Readme is primarily concerned with porting VEIL Max patches over to Puredata so that the algorithm can exist on a handheld Linux device, specifically the Raspberry Pi.
+This entails rewriting the algorithms in Puredata of course, but also adding into those patches, osc listeners for python 3 scripts which
+will handle GPIO input and audio file read and write to USB. 
+
+Drawing from the knowledge base created for Budor's Ash Machine's, we have some GPIO code we can use. There was some UDP code I used to recieve messages from a Max dispatcher patch but I couldn't find any good examples of UDP clients on forums that worked with Puredata's 
+very specific methods of UDP ingestion via the netreceive object. After a few hours of trial and insessant error, I looked at python-osc
+and got things to work very quickly! To install python-osc:
+
+pi@raspberrypi:~ $ sudo -H pip3 install python-osc
+
+Then just stole the code from their homepage as a test. Here's the code.
+
+         """Small example OSC client
+
+        This program sends 10 random values between 0.0 and 1.0 to the /filter address,
+        waiting for 1 seconds between each value.
+        """
+        import argparse
+        import random
+        import time
+
+        from pythonosc import udp_client
+
+
+        if __name__ == "__main__":
+          parser = argparse.ArgumentParser()
+          parser.add_argument("--ip", default="127.0.0.1",
+              help="The ip of the OSC server")
+          parser.add_argument("--port", type=int, default=5005,
+              help="The port the OSC server is listening on")
+          args = parser.parse_args()
+
+          client = udp_client.SimpleUDPClient(args.ip, args.port)
+
+          for x in range(10):
+            client.send_message("/filter", random.random())
+            time.sleep(1)
+
+and here's a little PD mockup of the patch. 
+
+netreceive -u -b 5005
+|
+oscparse
+|
+print
+
+
